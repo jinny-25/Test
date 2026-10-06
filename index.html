@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub edit test</title>
+<style>
+  :root {
+    --bg: #eef3f1;
+    --ink: #17252a;
+    --accent: #ffd23f;
+    --muted: #4d6168;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14211f; --ink: #eaf2ef; --muted: #9db3ac; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    padding: 4rem 1.25rem;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  h1 { font-size: 2.25rem; line-height: 1.15; margin: 0 0 .5rem; }
+  p { margin: 0 0 1.5rem; color: var(--muted); }
+  .edited {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #17252a;
+    background: var(--accent);
+    display: inline-block;
+    padding: .35rem .8rem;
+    margin: 0 0 2rem;
+  }
+  h2 { font-size: 1.1rem; margin: 0 0 .5rem; }
+  ul { margin: 0 0 2rem; padding-left: 1.25rem; }
+  li { margin-bottom: .35rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>If you can read this online, the site works.</h1>
+  <p>This page is a practice run. Change the highlighted line below, save your change on GitHub, and see how long it takes to show up here.</p>
+
+  <!-- TEST 1: change the name after "Last edited by:" -->
+  <div class="edited">Last edited by: Jen</div>
+
+  <h2>Add your name to the list</h2>
+  <ul>
+    <!-- TEST 2: copy the line below, paste it underneath, and change the name -->
+    <li>Jen</li>
+  </ul>
+</main>
+</body>
+</html>
